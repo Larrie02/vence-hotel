@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vence Hotel</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="logo">VENCE</div><nav><a href="#hotel">Hotel</a><a href="#rooms">Rooms</a><a href="#dining">Restaurant</a><a href="#booking">Booking</a></nav></header>
+
+<section id="hotel">
+<h1>Welcome to <span>Vence</span></h1>
+<div class="hero-row"><p>Welcome to our serene retreat, where comfort meets style and exceptional service elevates every experience.</p><button class="btn" onclick="location.hash='booking'">Book now</button></div>
+<div class="img hero-img"><img src="images/lobby.jpg" alt="Vence Hotel"></div>
+</section>
+
+<section id="rooms">
+<h2>Our Rooms</h2>
+<div class="rooms">
+<div class="room"><div class="img"><img src="images/standard.jpg" alt="Vence Hotel"></div><p><span>Standard Room<small>1 bed | 2 sleeps</small></span><span>&#8599;</span></p></div>
+<div class="room"><div class="img"><img src="images/junior.jpg" alt="Vence Hotel"></div><p><span>Junior Suite<small>1 bed | 2 sleeps</small></span><span>&#8599;</span></p></div>
+<div class="room"><div class="img"><img src="images/deluxe.jpg" alt="Vence Hotel"></div><p><span>Deluxe Room<small>2 beds | 4 sleeps</small></span><span>&#8599;</span></p></div>
+<div class="room"><div class="img"><img src="images/executive.jpg" alt="Vence Hotel"></div><p><span>Executive Room<small>2 beds | 4 sleeps</small></span><span>&#8599;</span></p></div>
+</div>
+</section>
+
+<section id="booking">
+<h2>Booking</h2>
+<div class="book">
+<div><label for="ci">Check-in</label><input type="date" id="ci"></div>
+<div><label for="co">Check-out</label><input type="date" id="co"></div>
+<div><label for="gu">Guests</label><select id="gu"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option></select></div>
+<button class="btn" onclick="apply()">Apply</button>
+</div>
+<div id="msg" role="status"></div>
+<div class="grid2"><div class="img"><img src="images/deluxe.jpg" alt="Vence Hotel"></div><div class="img"><img src="images/junior.jpg" alt="Vence Hotel"></div></div>
+</section>
+
+<section id="dining">
+<h2>Restaurant</h2>
+<div class="grid2"><div class="img"><img src="images/restaurant.jpg" alt="Vence Hotel"></div><div><p>Start your morning with a slow breakfast and end the evening with seasonal dishes cooked over open flame. Our restaurant is open daily from 6:30 am to 11 pm.</p><p style="color:var(--mut);font-size:14px">Breakfast 6:30–10:30 &middot; Lunch 12–3 &middot; Dinner 6–11</p></div></div>
+</section>
+
+<section class="video">
+<div class="img"><img src="images/video.jpg" alt="Vence Hotel"></div>
+<h2>Visualize our modern hotel</h2>
+<button class="play" aria-label="Play video" onclick="playVideo()"></button>
+</section>
+
+<footer><span>&copy; 2026 Vence Hotel</span><span>reservations@vence.example &middot; +000 000 0000</span></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
